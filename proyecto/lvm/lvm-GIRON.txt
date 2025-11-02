@@ -1,0 +1,2 @@
+========== VERIFICACIÓN DE LVM - GIRON ==========
+=== ESPACIO EN DISCO SIN LVM MONTADO ===
