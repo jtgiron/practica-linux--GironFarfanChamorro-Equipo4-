@@ -21,3 +21,7 @@ tmpfs                                        197M  4.0K  197M   1% /run/user/100
 === ESCANEO DEL LOGICAL VOLUMES ===
   ACTIVE            '/dev/vg_datos_GIRON/lv_storage_GIRON' [1.50 GiB] inherit
 
+=== ECANEO DE PHYSICAL VOLUMES ===
+  PV /dev/sdc   VG vg_datos_GIRON   lvm2 [<2.00 GiB / 508.00 MiB free]
+  Total: 1 [<2.00 GiB] / in use: 1 [<2.00 GiB] / in no VG: 0 [0   ]
+
