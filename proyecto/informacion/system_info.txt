@@ -39,8 +39,7 @@
 [47C[100m   [101m   [102m   [103m   [104m   [105m   [106m   [107m   [m
 
 
-========== FASTFETCH DE [NOMBRE] ==========
-echo ========== FASTFETCH DE [CHRISTIAN] ==========
+========== FASTFETCH DE [CHRISTIAN] ==========
                              ....
               .',:clooo:  .:looooo:.
            .;looooooooc  .oooooooooo'
