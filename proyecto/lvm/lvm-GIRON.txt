@@ -1,2 +1,10 @@
 ========== VERIFICACIÓN DE LVM - GIRON ==========
 === ESPACIO EN DISCO SIN LVM MONTADO ===
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           197M  984K  196M   1% /run
+/dev/sda1        39G  1.8G   37G   5% /
+tmpfs           982M     0  982M   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+vagrant         425G  169G  257G  40% /vagrant
+tmpfs           197M  4.0K  197M   1% /run/user/1000
+
