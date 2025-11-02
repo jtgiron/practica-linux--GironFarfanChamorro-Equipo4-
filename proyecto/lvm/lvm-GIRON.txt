@@ -18,3 +18,6 @@ vagrant                                      425G  169G  257G  40% /vagrant
 tmpfs                                        197M  4.0K  197M   1% /run/user/1000
 /dev/mapper/vg_datos_GIRON-lv_storage_GIRON  1.5G   24K  1.4G   1% /mnt/lvm_storage_GIRON
 
+=== ESCANEO DEL LOGICAL VOLUMES ===
+  ACTIVE            '/dev/vg_datos_GIRON/lv_storage_GIRON' [1.50 GiB] inherit
+
