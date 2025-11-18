@@ -26,3 +26,37 @@ Archivos en cada directorio:
 -rw-r--r-- 1 root root 27 Nov  2 16:22 /mnt/lvm_storage_GIRON/proyectos/archivados/documento_08.txt
 -rw-r--r-- 1 root root 27 Nov  2 16:22 /mnt/lvm_storage_GIRON/proyectos/archivados/documento_06.txt
 
+========== VERIFICACIÓN DE ARCHIVOS - CHAMORRO ==========
+Estructura de directorios creada:
+/mnt/lvm_storage_chamorro
+/mnt/lvm_storage_chamorro/lost+found
+/mnt/lvm_storage_chamorro/proyectos
+/mnt/lvm_storage_chamorro/proyectos/activos
+/mnt/lvm_storage_chamorro/proyectos/archivados
+/mnt/lvm_storage_chamorro/respaldos
+/mnt/lvm_storage_chamorro/temporal
+/mnt/lvm_storage_chamorro
+/mnt/lvm_storage_chamorro/lost+found
+/mnt/lvm_storage_chamorro/proyectos
+/mnt/lvm_storage_chamorro/proyectos/activos
+/mnt/lvm_storage_chamorro/proyectos/archivados
+/mnt/lvm_storage_chamorro/respaldos
+/mnt/lvm_storage_chamorro/temporal
+Archivos en cada directorio:
+-rwxr-xr-x 1 root root 144 Nov 18 13:28 /mnt/lvm_storage_chamorro/script.sh
+-rw-r--r-- 1 root root 27 Nov 18 13:32 /mnt/lvm_storage_chamorro/proyectos/activos/documento_02.txt
+-rw-r--r-- 1 root root 27 Nov 18 13:32 /mnt/lvm_storage_chamorro/proyectos/activos/documento_01.txt
+-rw-r--r-- 1 root root 27 Nov 18 13:32 /mnt/lvm_storage_chamorro/proyectos/activos/documento_05.txt
+-rw-r--r-- 1 root root 27 Nov 18 13:32 /mnt/lvm_storage_chamorro/proyectos/activos/documento_04.txt
+-rw-r--r-- 1 root root 27 Nov 18 13:32 /mnt/lvm_storage_chamorro/proyectos/activos/documento_03.txt
+-rw-r--r-- 1 root root 27 Nov 18 13:29 /mnt/lvm_storage_chamorro/proyectos/archivados/documento_06.txt
+-rw-r--r-- 1 root root 27 Nov 18 13:29 /mnt/lvm_storage_chamorro/proyectos/archivados/documento_07.txt
+-rw-r--r-- 1 root root 27 Nov 18 13:29 /mnt/lvm_storage_chamorro/proyectos/archivados/documento_08.txt
+-rw-r--r-- 1 root root 27 Nov 18 13:35 /mnt/lvm_storage_chamorro/respaldos/documento_10.txt
+-rw-r--r-- 1 root root 27 Nov 18 13:35 /mnt/lvm_storage_chamorro/respaldos/documento_09.txt
+-rw-r--r-- 1 root root 27 Nov 18 13:29 /mnt/lvm_storage_chamorro/temporal/documento_02.txt
+-rw-r--r-- 1 root root 27 Nov 18 13:29 /mnt/lvm_storage_chamorro/temporal/documento_01.txt
+-rw-r--r-- 1 root root 27 Nov 18 13:29 /mnt/lvm_storage_chamorro/temporal/documento_05.txt
+-rw-r--r-- 1 root root 27 Nov 18 13:29 /mnt/lvm_storage_chamorro/temporal/documento_04.txt
+-rw-r--r-- 1 root root 27 Nov 18 13:29 /mnt/lvm_storage_chamorro/temporal/documento_03.txt
+
