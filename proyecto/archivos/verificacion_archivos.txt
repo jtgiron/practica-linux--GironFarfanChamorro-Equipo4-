@@ -60,3 +60,29 @@ Archivos en cada directorio:
 -rw-r--r-- 1 root root 27 Nov 18 13:29 /mnt/lvm_storage_chamorro/temporal/documento_04.txt
 -rw-r--r-- 1 root root 27 Nov 18 13:29 /mnt/lvm_storage_chamorro/temporal/documento_03.txt
 
+========== VERIFICACIÓN DE ARCHIVOS - [APELLIDO] ==========
+Estructura de directorios creada:
+/mnt/lvm_storage_farfan
+/mnt/lvm_storage_farfan/respaldos
+/mnt/lvm_storage_farfan/lost+found
+/mnt/lvm_storage_farfan/proyectos
+/mnt/lvm_storage_farfan/proyectos/activos
+/mnt/lvm_storage_farfan/proyectos/archivados
+/mnt/lvm_storage_farfan/temporal
+Archivos en cada directorio:
+-rw-r--r-- 1 root root 0 Nov 22 18:10 /mnt/lvm_storage_farfan/respaldos/documento_09.txt
+-rw-r--r-- 1 root root 0 Nov 22 18:10 /mnt/lvm_storage_farfan/respaldos/documento_10.txt
+-rw-r--r-- 1 root root 0 Nov 22 18:07 /mnt/lvm_storage_farfan/proyectos/activos/documento_02.txt
+-rw-r--r-- 1 root root 0 Nov 22 18:07 /mnt/lvm_storage_farfan/proyectos/activos/documento_05.txt
+-rw-r--r-- 1 root root 0 Nov 22 18:07 /mnt/lvm_storage_farfan/proyectos/activos/documento_01.txt
+-rw-r--r-- 1 root root 0 Nov 22 18:07 /mnt/lvm_storage_farfan/proyectos/activos/documento_03.txt
+-rw-r--r-- 1 root root 0 Nov 22 18:07 /mnt/lvm_storage_farfan/proyectos/activos/documento_04.txt
+-rw-r--r-- 1 root root 0 Nov 22 17:56 /mnt/lvm_storage_farfan/proyectos/archivados/documento_07.txt
+-rw-r--r-- 1 root root 0 Nov 22 17:56 /mnt/lvm_storage_farfan/proyectos/archivados/documento_06.txt
+-rw-r--r-- 1 root root 0 Nov 22 17:56 /mnt/lvm_storage_farfan/proyectos/archivados/documento_08.txt
+-rw-r--r-- 1 root root 0 Nov 22 17:56 /mnt/lvm_storage_farfan/temporal/documento_02.txt
+-rw-r--r-- 1 root root 0 Nov 22 17:56 /mnt/lvm_storage_farfan/temporal/documento_05.txt
+-rw-r--r-- 1 root root 0 Nov 22 17:56 /mnt/lvm_storage_farfan/temporal/documento_01.txt
+-rw-r--r-- 1 root root 0 Nov 22 17:56 /mnt/lvm_storage_farfan/temporal/documento_03.txt
+-rw-r--r-- 1 root root 0 Nov 22 17:56 /mnt/lvm_storage_farfan/temporal/documento_04.txt
+
