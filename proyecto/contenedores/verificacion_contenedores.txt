@@ -1,0 +1,64 @@
+========== VERIFICACIÓN CONTENEDORES - GIRON ==========
+=== IP DE LA VM ===
+10.0.2.15 192.168.1.36 172.17.0.1 172.18.0.1 fd17:625c:f037:2:4c:36ff:fef5:e5d8 2802:8010:2502:4201:a00:27ff:feb2:8c8c 
+
+=== CONTENEDORES EN EJECUCIÓN ===
+CONTAINER ID   IMAGE                    COMMAND                  CREATED          STATUS          PORTS                                         NAMES
+0fd972cab235   grafana/grafana:latest   "/run.sh"                15 minutes ago   Up 15 minutes   0.0.0.0:3000->3000/tcp, [::]:3000->3000/tcp   grafana-practica
+6c0b3ff013db   prom/prometheus:latest   "/bin/prometheus --c…"   15 minutes ago   Up 15 minutes   0.0.0.0:9090->9090/tcp, [::]:9090->9090/tcp   prometheus-practica
+a433fe7cefc4   postgres:alpine          "docker-entrypoint.s…"   15 minutes ago   Up 15 minutes   0.0.0.0:5432->5432/tcp, [::]:5432->5432/tcp   postgres-practica
+178957a6954e   redis:alpine             "docker-entrypoint.s…"   15 minutes ago   Up 15 minutes   0.0.0.0:6379->6379/tcp, [::]:6379->6379/tcp   redis-practica
+ce07e38ad31b   nginx:alpine             "/docker-entrypoint.…"   15 minutes ago   Up 15 minutes   0.0.0.0:8081->80/tcp, [::]:8081->80/tcp       nginx-practica
+43032e5d03e1   grafana/loki:latest      "/usr/bin/loki -conf…"   15 minutes ago   Up 15 minutes   0.0.0.0:3100->3100/tcp, [::]:3100->3100/tcp   loki-practica
+
+=== ESTADO DE DOCKER-COMPOSE ===
+       Name                      Command               State                    Ports                  
+-------------------------------------------------------------------------------------------------------
+grafana-practica      /run.sh                          Up      0.0.0.0:3000->3000/tcp,:::3000->3000/tcp
+loki-practica         /usr/bin/loki -config.file ...   Up      0.0.0.0:3100->3100/tcp,:::3100->3100/tcp
+nginx-practica        /docker-entrypoint.sh ngin ...   Up      0.0.0.0:8081->80/tcp,:::8081->80/tcp    
+postgres-practica     docker-entrypoint.sh postgres    Up      0.0.0.0:5432->5432/tcp,:::5432->5432/tcp
+prometheus-practica   /bin/prometheus --config.f ...   Up      0.0.0.0:9090->9090/tcp,:::9090->9090/tcp
+redis-practica        docker-entrypoint.sh redis ...   Up      0.0.0.0:6379->6379/tcp,:::6379->6379/tcp
+
+=== REDES DE DOCKER ===
+NETWORK ID     NAME                      DRIVER    SCOPE
+df70267b7562   bridge                    bridge    local
+744cf1c58ac6   contenedores_monitoring   bridge    local
+c21f24be3ebd   host                      host      local
+961466a85de8   none                      null      local
+
+=== VOLUMENES DE DOCKER ===
+DRIVER    VOLUME NAME
+local     0c86ba19b115502858c36118ef4b60143187cdaaf88dde5e2be3bef283b96401
+local     1aab1b085a739a6c1255f682ba44c06111166664047761add3304498c309ad78
+local     02f76dcfc914e6b49b612e74074a730570da6d573b902f344875ab5d401cf093
+local     3d9c1135515c177f2b511b414892b561ede394c36b702c03c798e80b5940b2af
+local     3d29113732aa59b0e14969084d22cf24458aa23e5870bf8a9f4d03e54994b66a
+local     4d7acc33f63f55833dcddb0bf3ff06be63037490911fc5682e4b1d0fc010efc9
+local     8ac492ea76aabbb05aa3b44e052b0ab4dadecc466105d6746888834ce360227c
+local     24c35eacdfc6aabde3a61c6d1d1b68f6e6dd71588fed44ee6278f2cb95ed55d8
+local     60c21f7760017929280e8d42d54a583eee442ac3916a99aa5c4a6127dec00bc2
+local     70cdacef930c4dcbf5506340b2bf2103aa5746994fac17fae82ce2bce3e44daf
+local     71c66837f37288d29d84881813ef3f42a7bff5227e2f9442c68be11ccb892d26
+local     82c2c239b543184703617bf61fa9af96e4c16800ab99daa7e90391eee26f4da1
+local     586ee46c1b93c8bc38a17ea983615b4647bd81dbb964422305c341336503d81b
+local     731a8e8e57b6c9f43d58a6e546c5950847a2b68fa93a6750625f1b8be16f5c83
+local     8918a6a7df25bc915defe9f5fdc2a6e0fb5d408218a3db2e3f7b7cca6bf06118
+local     18318c3c300406f7212d87e30d8178c22901e95cec563abc0a8b34f8f513d4cf
+local     1956623e720e195c4c7d85d695166534dcbd5b6d8ead348b75562dbfe31d08ec
+local     a1e97003647a69e3ea37c1e3f72269ad445375406611170df52ea29b8427e035
+local     a4c681d9f1424a4a2e0851ff6e368e0dba50b7fd33c27fbaec85e0bbafb72f36
+local     a339ae945dc637cc9364c3caefe7a75d35b12441d51497969482f6029491a060
+local     adea5c48cf400b8b62fcc2ef2dc0bb6237318a0771c785041c5ee4f7bcd9a338
+local     bc97613e96e17639142609e8602ab295341b4dbd5e172665977ba1ca6301fd43
+local     bfe8caaa48e3fc6ab3153ee2c2f4c34fe0096de74da0665746578a590c391fc7
+local     c5bd652fe6f6d2f290785e1ccccb63cb0116b452920d356e67884c00d622f911
+local     contenedores_grafana-storage
+local     d2f9c1d16b928d69009c14694d04dd600823cd30db5ae14fffacf91c6f07f10e
+local     e2b2d933791bc703857b7df7e04a3c5e9138bb5281441e3b2eb1b75f36c35e53
+local     ee4f11d0f9072542561b4984201a25f7679bf1382fcd16f178f56689586eb52f
+local     f0abc5f5dcf98dd29fa6ff94a8258d357ab31f3520b21eeaea5595374f3bc92d
+local     f39d873897a23206bcbbba36001b266b26e1b84d93b73ed77306d4eec2d58754
+local     fbe8bd2c8e4e2c50b39173edf7616de7aeffdb76ee9cadaf11e5f4b4d6481452
+
