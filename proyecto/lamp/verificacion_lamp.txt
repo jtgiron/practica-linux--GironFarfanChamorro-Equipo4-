@@ -1,0 +1,59 @@
+========== VERIFICACIÓN SERVIDOR LAMP - FARFAN ==========
+=== VERSIONES INSTALADAS ===
+Server version: Apache/2.4.52 (Ubuntu)
+Server built:   2025-08-11T12:10:10
+mysql  Ver 8.0.44-0ubuntu0.22.04.1 for Linux on x86_64 ((Ubuntu))
+PHP 8.1.2-1ubuntu2.22 (cli) (built: Jul 15 2025 12:11:22) (NTS)
+Copyright (c) The PHP Group
+Zend Engine v4.1.2, Copyright (c) Zend Technologies
+    with Zend OPcache v8.1.2-1ubuntu2.22, Copyright (c), by Zend Technologies
+
+=== ESTADO DE SERVICIOS ===
+● apache2.service - The Apache HTTP Server
+     Loaded: loaded (/lib/systemd/system/apache2.service; enabled; vendor preset: enabled)
+     Active: active (running) since Sun 2025-11-23 02:18:13 UTC; 1h 33min ago
+       Docs: https://httpd.apache.org/docs/2.4/
+   Main PID: 18497 (apache2)
+      Tasks: 6 (limit: 2309)
+     Memory: 10.4M
+        CPU: 684ms
+     CGroup: /system.slice/apache2.service
+             ├─18497 /usr/sbin/apache2 -k start
+             ├─18498 /usr/sbin/apache2 -k start
+             ├─18499 /usr/sbin/apache2 -k start
+             ├─18500 /usr/sbin/apache2 -k start
+             ├─18501 /usr/sbin/apache2 -k start
+             └─18502 /usr/sbin/apache2 -k start
+
+Nov 23 02:18:13 linux-practice systemd[1]: Starting The Apache HTTP Server...
+Nov 23 02:18:13 linux-practice apachectl[18495]: AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.2.1. Set the 'ServerName' directive globally to suppress this message
+Nov 23 02:18:13 linux-practice systemd[1]: Started The Apache HTTP Server.
+
+● mysql.service - MySQL Community Server
+     Loaded: loaded (/lib/systemd/system/mysql.service; enabled; vendor preset: enabled)
+     Active: active (running) since Sat 2025-11-22 01:56:14 UTC; 1 day 1h ago
+   Main PID: 7693 (mysqld)
+     Status: "Server is operational"
+      Tasks: 39 (limit: 2309)
+     Memory: 377.2M
+        CPU: 9min 17.210s
+     CGroup: /system.slice/mysql.service
+             └─7693 /usr/sbin/mysqld
+
+Nov 22 01:56:12 linux-practice systemd[1]: Starting MySQL Community Server...
+Nov 22 01:56:14 linux-practice systemd[1]: Started MySQL Community Server.
+
+=== PUERTOS EN ESCUCHA ===
+tcp        0      0 127.0.0.1:3306          0.0.0.0:*               LISTEN      7693/mysqld         
+tcp        0      0 127.0.0.1:33060         0.0.0.0:*               LISTEN      7693/mysqld         
+tcp6       0      0 :::80                   :::*                    LISTEN      18497/apache2       
+
+=== ARCHIVOS WEB CREADOS ===
+total 24
+drwxr-xr-x 2 www-data www-data 4096 Nov 23 03:33 .
+drwxr-xr-x 3 root     root     4096 Nov  1 17:56 ..
+-rwxr-xr-x 1 www-data www-data 1024 Nov 23 03:23 .info.php.swp
+-rwxr-xr-x 1 www-data www-data 3168 Nov 23 03:15 index.html
+-rwxr-xr-x 1 www-data www-data   21 Nov 23 03:23 info.php
+-rwxr-xr-x 1 www-data www-data  396 Nov 23 03:33 test_db.php
+
