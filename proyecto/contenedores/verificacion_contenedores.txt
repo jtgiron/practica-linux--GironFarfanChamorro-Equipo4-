@@ -124,3 +124,10 @@ postgres-practica     docker-entrypoint.sh postgres    Up      0.0.0.0:5432->543
 prometheus-practica   /bin/prometheus --config.f ...   Up      0.0.0.0:9090->9090/tcp,:::9090->9090/tcp
 redis-practica        docker-entrypoint.sh redis ...   Up      0.0.0.0:6379->6379/tcp,:::6379->6379/tcp
 
+=== REDES DE DOCKER ===
+NETWORK ID     NAME                      DRIVER    SCOPE
+98ccfd53f21e   bridge                    bridge    local
+cc565873f779   contenedores_monitoring   bridge    local
+92d2a2d2649b   host                      host      local
+77455f862667   none                      null      local
+
