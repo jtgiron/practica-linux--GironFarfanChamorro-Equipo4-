@@ -131,3 +131,5 @@ cc565873f779   contenedores_monitoring   bridge    local
 92d2a2d2649b   host                      host      local
 77455f862667   none                      null      local
 
+ === VOLÚMENES DE DOCKER ===
+
