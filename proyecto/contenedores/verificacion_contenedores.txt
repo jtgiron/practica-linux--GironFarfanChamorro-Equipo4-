@@ -100,3 +100,17 @@ local     722dc5ead7b33688e5dcec83045eace8dc3170d1ff49b95ba6cf4ac544abf044
 local     67325a81645b8100fca019bcc6edae2156ebb457b21cdcbbfff819b011555947
 local     contenedores_grafana-storage
 
+========== VERIFICACIÓN CONTENEDORES - CHAMORRO ==========
+
+=== IP DE LA VM === 
+10.0.2.15 192.168.0.17 172.17.0.1 172.18.0.1 fd00::4c:36ff:fef5:e5d8 2800:810:47f:28af:d004:e2e9:1e7d:96d fdaa:bbcc:ddee:0:a00:27ff:fe6c:8047 2800:810:47f:28af:a00:27ff:fe6c:8047 
+
+=== CONTENEDORES EN EJECUCIÓN ===
+CONTAINER ID   IMAGE                    COMMAND                  CREATED        STATUS          PORTS                                         NAMES
+04257a8493a5   grafana/grafana:latest   "/run.sh"                47 hours ago   Up 23 minutes   0.0.0.0:3000->3000/tcp, [::]:3000->3000/tcp   grafana-practica
+3706e0633a19   prom/prometheus:latest   "/bin/prometheus --c…"   47 hours ago   Up 23 minutes   0.0.0.0:9090->9090/tcp, [::]:9090->9090/tcp   prometheus-practica
+c149387391e0   postgres:alpine          "docker-entrypoint.s…"   47 hours ago   Up 23 minutes   0.0.0.0:5432->5432/tcp, [::]:5432->5432/tcp   postgres-practica
+8381248ec310   nginx:alpine             "/docker-entrypoint.…"   47 hours ago   Up 23 minutes   0.0.0.0:8081->80/tcp, [::]:8081->80/tcp       nginx-practica
+5ff8d0ac8931   redis:alpine             "docker-entrypoint.s…"   47 hours ago   Up 23 minutes   0.0.0.0:6379->6379/tcp, [::]:6379->6379/tcp   redis-practica
+67f7bba2cb8e   grafana/loki:latest      "/usr/bin/loki -conf…"   47 hours ago   Up 23 minutes   0.0.0.0:3100->3100/tcp, [::]:3100->3100/tcp   loki-practica
+
